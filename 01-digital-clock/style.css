@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+#clock {
+    font-size: 100px;
+    color: lime;
+    font-family: monospace;
+    text-shadow: 0 0 10px lime, 0 0 20px lime, 0 0 40px lime;
+}
