@@ -1,0 +1,366 @@
+@charset "UTF-8";
+
+/*-------共通----------------------------------------------------------*/
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 0.9rem;
+    color: #383e38;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+a {
+    color: #383e38;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+/*------header---------------------------------------------------------*/
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    margin-left: 30px;
+}
+
+.contact {
+    margin-left: auto;
+    width: 200px;
+    height: 80px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*------mainvisual------------------------------------------------------*/
+
+.mainvisual img {
+    width: 100%;
+    height: calc(100vh - 80px);
+    object-fit: cover;
+}
+
+/*-----section titlie--------------------------------------------------*/
+
+.section-title {
+    margin: 0 0 50px 0;
+    
+}
+
+.en {
+    font-size: 3rem;
+    display: block;
+    letter-spacing: 0.3em;
+    font-weight: 350;
+}
+
+.ja {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+    margin-top: 30px;
+}
+
+/*-----news-------------------------------------------------------------*/
+
+.news-list {
+    display: flex;
+    list-style: none;
+    padding: 50px 0 ;
+    margin: 0;
+}
+
+.news-list li {
+    width: calc(100% / 3);
+    padding: 10px 20px;
+    border-right: 1px solid #000;
+}
+
+.news-list li span {
+    background-color: #000;
+    color: #fafafa;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+.news-list li:first-child {
+    padding-left: 0;
+}
+
+.news-list li:last-child {
+    border-right: none;
+}
+
+.date-area {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+/*------about----------------------------------------------*/
+#about {
+    display: flex;
+    margin: auto 0;
+    height: 500px;
+}
+
+.about-img {
+    width: 55%;
+    height: 400px;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-area {
+    width: 45%;
+    padding: 0 5%;
+}
+
+/*------business--------------------------------------------*/
+.business-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.business-list li {
+    list-style: none;
+    width: 45%;
+}
+
+.business-left {
+    padding-top: 150px;
+    margin-right: 8%;
+}
+
+.business-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.business-img {
+    margin: 10px 0 50px 0;
+}
+
+/*-------company-------------------------------------------*/
+#company {
+    position: relative;
+    height: 750px;
+}
+
+.company-area {
+    background-color: #ffffff;
+    width: 50%;
+    padding: 100px 0 100px 5%;
+}
+
+.company-img {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    width: 53%;
+}
+
+.company-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.information {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.information dt {
+    width: 18%;
+    margin-bottom: 16px;
+}
+
+.information dd {
+    width: 82%;
+    margin: 0 0 16px 0;
+}
+
+/*-------footer-------------------------------------------------*/
+footer {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 40px 0 20px;
+} 
+
+.footer-area {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+}
+
+.footer-area-a{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.footer-logo {
+    font-size: 2.5rem;
+    letter-spacing: 7px;
+    font-weight: 350;
+}
+
+/*------ccreen------------------------------------------------*/
+@media screen and (max-width: 600px) {
+    /*-----header---------------------------------------------*/
+    header {
+        height: auto;
+        padding: 20px 16px;
+    }
+
+    .header-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h1 {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    header ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    header li {
+        margin-left: 0;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .mainvisual img {
+        height: calc(100vh - 110px);
+    }
+
+    /*------news---------------------------------------------------*/
+    .news-list {
+        flex-direction: column;
+    }
+
+    .news-list li {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 30px;
+        border-right: none;
+    }
+
+    /*-------about--------------------------------------------------*/
+    #about {
+        flex-direction: column;
+    }
+
+    .about-img, .text-area {
+        width: 100%;
+    }
+    
+    .text-area {
+        padding-bottom: 30px;
+    }
+
+    /*-------business----------------------------------------*/
+    .business-list {
+        flex-direction: column;
+    }
+
+    .business-list li {
+        width: 100%;
+    }
+
+    .business-left {
+        padding-top: 0;
+    }
+
+    
+    /*-----company-------------------------------------------*/
+    #company {
+        height: auto;
+    }
+
+    .company-area {
+        width: 100%;
+    }
+
+    .company-img {
+        position: static;
+        width: 100%;
+    }
+
+    .company-img img {
+        width: 100%;
+        height: auto;
+    }
+
+     /* ------footer------------------------------------------- */
+    .footer-area-a {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-logo {
+        padding: 0;
+        margin: 0;
+    }
+}
