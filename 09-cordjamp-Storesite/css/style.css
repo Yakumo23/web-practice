@@ -1,0 +1,403 @@
+/*-------共通----------------------------------------------------------*/
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 0.875rem;
+    color: #333;
+    margin: 0;
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #383e38;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.mask {
+    flex: 1;
+}
+
+/* -----header--------------------------------------------------------- */
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 40px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80px;
+    z-index: 20;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h1 a {
+    transition: opacity 0.3s;
+}
+
+h1 a:hover {
+    opacity: 0.7;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+/* 黒背景の調節からよろしく。横幅調節してフォントの色,白にして。 */
+    height: 100vh;
+    background-color: #333;
+    transition: 0.5s;
+    z-index: 30;
+}
+
+.open #nav {
+    left: 0;
+}
+
+#nav a {
+    color: #fff;
+}
+
+#nav li {
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* -----hamburger---------------------------------------------------------------- */
+#hamburger {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    margin-left: auto;
+    z-index: 40;
+}
+
+#hamburger span {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+}
+
+#hamburger span:first-child {
+    top: 10px;
+    transition: 0.5s;
+}
+
+#hamburger span:last-child {
+    top: 18px;
+    transition: 0.5s;
+}
+
+.open #hamburger span:first-child {
+    top: 14px;
+    transform: rotate(45deg);
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.open #hamburger span:last-child {
+    top: 14px;
+    transform: rotate(-45deg);
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+/* -----mask-------------------------------------------------------------- */
+mask {
+    display: none;
+}
+
+.open .mask {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 20;
+}
+
+/* -----main----------------------------------------------------------------- */
+/* -----#top------------------------------------------------------------------------ */
+#top {
+    padding-top: 70px;
+}
+
+#top ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+#top li {
+    width: 100%;
+}
+
+#top img {
+    width: 100%;
+}
+
+.item-list a {
+    display: block;
+    transition: opacity 0.3s;
+}
+
+.item-list a:hover {
+    opacity: 0.7;
+}
+
+.item-list p {
+    font-size: 0.75rem;
+}
+
+.view-more {
+    display: flex;
+    justify-content: center;
+}
+
+.view-more li {
+    margin: 0 20px 100px 20px;
+}
+
+.top-text {
+    display: inline-block;
+    margin-top: 40px;
+    transition: opacity 0.3s;
+}
+
+.top-text:hover {
+    opacity: 0.7;
+}
+
+/* -----footer---------------------------------------------------------- */
+
+#footer-list {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+#footer-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#footer-area p {
+    margin: 0;
+    font-size: 0.75rem;
+}
+
+/* -------item---------------------------------------------------------------- */
+
+#item-title {
+    margin-bottom: 25px;
+}
+#item-area {
+    padding-top: 120px;
+}
+
+#item {
+    display: flex;
+    width: 82%;
+}
+
+#item img {
+    width: 50%;
+    height: 420px;
+    margin-right: 40px;
+}
+
+#item-text {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#item-text li {
+    margin-bottom: 38px;
+}
+
+#item-text dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+#item-text dt {
+    display: flex;
+    width: 30%;
+}
+
+#item-text dd {
+    width: 70%;
+    margin: 0;
+}
+
+/* -----products------------------------------------------------------------------ */
+.products-title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* -----about------------------------------------------------------------------------- */
+#about-area {
+    margin-top: 120px;
+    margin-bottom: 150px;
+}
+
+.about-title {
+    margin-bottom: 30px;
+}
+
+.about-text {
+    width: 600px;
+    line-height: 30px;
+}
+
+.about-text p {
+    margin-bottom: 35px;
+}
+
+/* -----company------------------------------------------------------------------------ */
+#company-area {
+    margin-top: 120px;
+    margin-bottom: 150px;
+}
+
+.company-title {
+    margin-bottom: 20px;
+}
+
+.company-information {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+.company-information dt {
+    width: 25%;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.company-information dd {
+    width: 75%;
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.company-information dt:last-of-type  {
+    border-bottom: none;
+}
+
+.company-information dd:last-of-type {
+    border-bottom: none;
+}
+
+.map {
+    width: 600px;
+    margin: 30px 0;
+}
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    filter: grayscale(100%);
+}
+
+/* --------------------------------------------------------------
+SP
+----------------------------------------------------------------- */
+
+@media screen and (max-width: 900px) {
+    #top ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 20px;
+    }
+
+    /* ----------------------------------------------------------
+    item
+    ------------------------------------------------------------- */
+    #item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #item img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    #item-text {
+        width: 100%;
+    }
+
+    /* -----------------------------------------------------------------
+    company
+    ------------------------------------------------------------------ */
+    .company-information dl {
+        flex-direction: column;
+    }
+
+    .company-information dt {
+        width: 100%;
+        border-bottom: none;
+        padding-bottom: 5px;
+    }
+
+    .company-information dd {
+        width: 100%;
+        padding-top: 5px;
+    }
+
+    /* --------------------------------------------------------------
+    footer
+    ------------------------------------------------------------------- */
+    #footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+}
+
+
+
+
+
