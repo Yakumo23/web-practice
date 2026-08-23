@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- 英字 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 日本語 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <h1 class="header-logo">YAKUMO</h1>
+
+        <a href="https://github.com/Yakumo23/web-practice">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#about-area">ABOUT</a></li>
+          <li><a href="#work-area">WORK</a></li>
+          <li><a href="#skill-area">SKILLS</a></li>
+          <li><a href="#contact-area">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <div class="wrapper" id="about-area">
+            <div class="title">ABOUT</div>
+
+                <div id="about-content">
+                <img src="img/main.jpg" />
+                    <ul>
+                        <li>
+                            webエンジニアで稼ぐことを目指していろいろ勉強し始めた学生です。
+                        </li>
+                        <li>今は室蘭工業大学に所属しています。</li>
+                        <li>
+                            まだ得意と言えるようなものはありませんが鋭意学習中です。現在はJavascriptを学習しています。
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <a href="https://muroran-it.ac.jp/">MURORANN INSTITUTE OF TECHNOLOGY</a>
+                        </li>
+                        <li><i class="fa-solid fa-location-dot"></i>Japan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper" id="work-area">
+            <div class="title">WORK</div>
+
+            <div id="work-content">
+                <ul id="work-list">
+
+                    <li class="list-item">
+                        <a href="">
+                            <h2>練習用サイト</h2>
+                            <p>時計、タイマー、Todoリストなどの簡単なWebアプリ</p>
+                            <ul class="cord-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul> 
+                        </a>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="">
+                            <h2>模写コーディング</h2>
+                            <p>Cordjampのサイトを模写したものです。見本のものとはコードが異なります。</p>
+                            <ul class="cord-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </a>
+                    </li>
+                    
+                    <li class="list-item">
+                        <a href="">
+                            <h2>ポートフォリオVer.1.0</h2>
+                            <p>このポートフォリオです。</p>
+                            <ul class="cord-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </a>
+                    </li>                    
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="wrapper" id="skill-area">
+            <div class="title">SKILL</div>
+
+            <div class="skill-list" id="html-skill">
+                <h2>HHML5</h2>
+                <p>セマンティックタグを用いたページ構造や、複数ページサイトの基本的なコーディングができます。</p>
+            </div>
+
+            <div class="skill-list" id="css-skill">
+                <h2>CSS3</h2>
+                <p>Flexbox・Gridを用いたレイアウト、メディアクエリによる基本的なレスポンシブ対応、ホバー演出を実装できます。</p>
+            </div>
+
+            <div class="skill-list" id="js-skill">
+                <h2>JavaScript (学習中)</h2>
+                <p>DOM操作、イベント処理、タイマー処理を用いた小規模なWebアプリを実装できます。</p>
+            </div>
+        </div>
+
+        <div class="wrapper" id="contact-area">
+            <div class="title">CONTACT</div>
+            <div id="contact-content">
+                <div id="mail-area">
+                    <h2>メールでのお問い合わせ</h2>
+                    <p>お問合せは下の「メールを送る」ボタンからお願いします。</p>
+                    <a href=mailto:yakumo.051823@gmail.com" class="btn">メールを送る</a>
+                </div>
+
+                <div id="sns-area">
+                    <h2>
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <span>SNS</span>
+                    </h2>
+                    
+                    <div id="sns-item">
+                        <a href="https://x.com/home">
+                            <i class="fa-brands fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+
+                        <a href="https://github.com/Yakumo23/web-practice">
+                            <i class="fa-brands fa-github"></i>
+                            <span>Github</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 YAKUMO</p>
+
+        <div class="footer-area">
+            <a href="https://github.com/Yakumo23/web-practice">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://x.com/home">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
