@@ -15,8 +15,8 @@ fadeSections.forEach((section) => {
 
 // 現在の位置に応じてナビを変更
 
-const section = document.querySelectorAll(
-    "#about-area", "#work-area", "#skill-area", "#contact-area"
+const sections = document.querySelectorAll(
+    "#about-area, #work-area, #skill-area, #contact-area"
 );
 
 const navLinks = document.querySelectorAll("nav a");
