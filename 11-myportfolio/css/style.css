@@ -53,6 +53,19 @@ nav li a {
     align-items: center;
 }
 
+.fade-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.fade-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* -----------------------------------------------------------------
 header
 ------------------------------------------------------------------- */
@@ -98,6 +111,23 @@ nav li {
 
 nav li:hover {
     border: 1px solid #333;
+}
+
+nav a {
+    position: relative;
+}
+
+nav a.active::after {
+    content: "";
+    position: absolute;
+    
+    left: 20%;
+    bottom: -10px;
+
+    width: 60%;
+    height: 1px;
+
+    background-color: #333;
 }
 
 /* ---------------------------------------------------------------------
@@ -175,6 +205,7 @@ body
 }
 
 /* skill */
+
 #skill-area {
     margin-bottom: 200px;
 }

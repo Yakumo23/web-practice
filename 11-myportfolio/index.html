@@ -48,11 +48,11 @@
     </header>
 
     <main>
-        <div class="wrapper" id="about-area">
+        <div class="wrapper fade-section" id="about-area">
             <div class="title">ABOUT</div>
 
                 <div id="about-content">
-                <img src="img/main.jpg" />
+                <img src="img/main.jpg" alt="">
                     <ul>
                         <li>
                             webエンジニアで稼ぐことを目指していろいろ勉強し始めた学生です。
@@ -63,15 +63,14 @@
                         </li>
                         <li>
                             <i class="fa-solid fa-graduation-cap"></i>
-                            <a href="https://muroran-it.ac.jp/">MURORANN INSTITUTE OF TECHNOLOGY</a>
+                            <a href="https://muroran-it.ac.jp/">MURORAN INSTITUTE OF TECHNOLOGY</a>
                         </li>
                         <li><i class="fa-solid fa-location-dot"></i>Japan</li>
                     </ul>
                 </div>
-            </div>
         </div>
 
-        <div class="wrapper" id="work-area">
+        <div class="wrapper fade-section" id="work-area">
             <div class="title">WORK</div>
 
             <div id="work-content">
@@ -92,7 +91,7 @@
                     <li class="list-item">
                         <a href="">
                             <h2>模写コーディング</h2>
-                            <p>Cordjampのサイトを模写したものです。見本のものとはコードが異なります。</p>
+                            <p>Codejampのサイトを模写したものです。見本のものとはコードが異なります。</p>
                             <ul class="cord-list">
                                 <li>HTML</li>
                                 <li>CSS</li>
@@ -117,11 +116,11 @@
 
         </div>
 
-        <div class="wrapper" id="skill-area">
+        <div class="wrapper fade-section" id="skill-area">
             <div class="title">SKILL</div>
 
             <div class="skill-list" id="html-skill">
-                <h2>HHML5</h2>
+                <h2>HTML5</h2>
                 <p>セマンティックタグを用いたページ構造や、複数ページサイトの基本的なコーディングができます。</p>
             </div>
 
@@ -136,13 +135,13 @@
             </div>
         </div>
 
-        <div class="wrapper" id="contact-area">
+        <div class="wrapper fade-section" id="contact-area">
             <div class="title">CONTACT</div>
             <div id="contact-content">
                 <div id="mail-area">
                     <h2>メールでのお問い合わせ</h2>
                     <p>お問合せは下の「メールを送る」ボタンからお願いします。</p>
-                    <a href=mailto:yakumo.051823@gmail.com" class="btn">メールを送る</a>
+                    <a href="mailto:yakumo.051823@gmail.com" class="btn">メールを送る</a>
                 </div>
 
                 <div id="sns-area">
@@ -181,6 +180,11 @@
         </div>
     </footer>
 
+    console.log("JS読み込み成功");
+
+    const fadeSections = document.querySelectorAll(".fade-section");
+
+    console.log(fadeSections);
     <script src="js/main.js"></script>
   </body>
 </html>
